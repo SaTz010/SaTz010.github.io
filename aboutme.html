@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the font family to Agency FB for the entire page */
+      body {
+        font-family: "Agency FB", sans-serif;
+      }
+      
+      /* Style the menu container */
+      .menu {
+        display: flex;
+        justify-content: center;
+        padding-left: 146px;
+        margin-top: 50px;
+      }
+      
+      /* Style the menu items */
+      .menu-item {
+        margin: 0 5px;
+        color: #000000;
+        text-decoration: none;
+        margin-right: 150px;
+        font-size: 20px;
+      }
+      
+      /* Style the hovered menu items */
+      .menu-item:hover {
+        color: red;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform-origin: bottom right;
+        transform: rotate(270deg);
+        font-size: 20px;
+        color: #555;
+        margin-right: 20px;
+        margin-bottom:300px;
+      }
+      body {
+        font-family: "Agency FB", sans-serif;
+        background-image: url('images/hululu2.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+      
+      /* Style the logo */
+      .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        margin-left: 120px;
+      }
+      
+      /* Style the logo image */
+      .logo img {
+        width: 100px;
+        height: auto;
+      }
+      
+      /* Style the containers for the rectangles */
+      .container {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: 300px;
+        left: 303px;
+        height: 100vh;
+        width: 60%;
+      }
+      
+      /* Style the rectangles */
+      .rectangle {
+        background-color: #c8c8c8;
+        width: 45%;
+        height: 500px;
+        box-sizing: content-box;
+        border: 10px solid #767676;
+        box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
+       
+      }
+      
+      /* Style the text inside the rectangles */
+      .rectangle p {
+        font-size: 22px;
+        line-height: 1.5;
+        text-align: center;
+        justify-content: center;
+        
+      }
+      .rectangle img{
+       
+       position: relative;
+       display: block;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 100px;
+       width: 50%;
+      }
+      .skills{
+        margin-top: 150px;
+        margin-left: 200px;
+        font-size: 22px;
+      }
+
+    </style>
+  </head>
+  
+  <body >
+    <div class="logo">
+      <a class="signature" href=index.html ><img src="images/signature.png" alt="Logo"></a>
+    </div>
+    
+    <nav class="menu">
+      <a class="menu-item active" href="index.html">HOME</a>
+      <a class="menu-item" href="aboutme.html"><font color="red">ABOUT</font></a>
+      <a class="menu-item" href="#">HOOBIES</a>
+      <a class="menu-item" href="#">EDUCATION</a>
+      <a class="menu-item" href="contact.html">CONTACT</a>
+    </nav>
+    <div class="footer">
+        @2023. My Website. All rights reserved.
+    </div>
+
+    <div class="container">
+      <div class="rectangle">
+        <h1 align="center"><font color="red">ABOUT ME</font></h1>
+        <p>Sanskar Ananta Tiwari is a dedicated student currently pursuing a Bachelor of Science (BSc) Honours in Computing at The British College. With a passion for technology, Sanskar has always been fascinated by the world of computing and is eager to pursue a career in the field. Alongside his studies, he is always eager to learn and expand his skill set through extracurricular activities and personal projects. Sanskar is a hardworking and driven individual who is committed to achieving his goals and making a positive impact on the world around him.</p>
+      </div>
+      <div class="skills">
+        <h1><font color ="red">SKILLS</font></h1>
+           <table>
+            <tr>
+                <td>Critical thinking and problem solving</td> <td><img src ="images/4star.png"></td>
+            </tr>
+            <tr>
+                <td>Teamwork and collaboration</td> <td><img src ="images/5star.png"></td>
+            </tr>
+            <tr>
+                <td>Professionalism and strong work ethic</td> <td><img src ="images/4star.png"></td>
+            </tr>
+            <tr>
+                <td>Oral and written communications skills</td> <td><img src ="images/3star.png"></td>
+            </tr>
+            <tr>
+                <td>Leadership</td> <td><img src ="images/4star.png"></td>
+            </tr>
+           
+        </div>
+      
+    </div>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Set the font family to Agency FB for the entire page */
+      body {
+        font-family: "Agency FB", sans-serif;
+      }
+      
+      /* Style the menu container */
+      .menu {
+        display: flex;
+        justify-content: center;
+        padding-left: 146px;
+        margin-top: 50px;
+      }
+      
+      /* Style the menu items */
+      .menu-item {
+        
+       
+        margin: 0 5px;
+        color: #000000;
+        text-decoration: none;
+        margin-right: 150px;
+        
+        font-size: 20px;
+      }
+      
+      /* Style the hovered menu items */
+      .menu-item:hover {
+        color: red;
+      }
+
+      .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform-origin: bottom right;
+        transform: rotate(270deg);
+        font-size: 20px;
+        color: #555;
+        margin-right: 20px;
+        margin-bottom:300px;
+      }
+      body {
+        font-family: "Agency FB", sans-serif;
+        background-image: url('images/hululu3.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+       /* Style the logo */
+       .logo {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 20px;
+        margin-left: 120px;
+      }
+      
+      /* Style the logo image */
+      .logo img {
+        width: 100px;
+        height: auto;
+      }
+      .container {
+        position:absolute;
+        top: 362px; ;
+        left: 303px;
+        height: 100vh; /* set the container height to the viewport height */
+      }
+      .form {
+  margin-top: 200px;
+  margin-left: 200px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 400px;
+  background-color: #f2f2f2;
+}
+
+.form input[type="text"], .form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 95%;
+  margin-bottom: 10px;
+  font-family: "Agency FB", sans-serif;
+}
+.form input[type="text"]::placeholder, .form textarea::placeholder {
+  font-family: "Agency FB", sans-serif; /* add font-family */
+  font-style: italic;
+  color: #aaa;
+}
+.form input[type="submit"] {
+  background-color:red;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.form input[type="submit"]:hover {
+  background-color: darkred;
+}
+
+      
+
+    </style>
+  </head>
+  
+  <body >
+        <div class="logo">
+        <a class="signature" href=index.html ><img src="images/signature.png" alt="Logo"></a>
+      </div>
+      <nav class="menu">
+      <a class="menu-item active" href="index.html">HOME</a>
+      <a class="menu-item" href="aboutme.html">ABOUT</a>
+      <a class="menu-item" href="#">HOOBIES</a>
+      <a class="menu-item" href="#">EDUCATION</a>
+      <a class="menu-item" href="contact.html"><font color="red">CONTACT</font></a>
+      </nav>
+
+      <div class="footer">
+        @2023. My Website. All rights reserved.
+      </div>
+      
+      </div>
+      <div class="form">
+        <input type="text" name="text" placeholder="Enter your last name"><br><br>
+        <input type="text" name="text" placeholder="Enter your first name"><br><br>
+        <input type="text" name="text" placeholder="Enter your email"><br><br>
+        <input type="checkbox" name="checkbox">Suggestion
+        <input type="checkbox" name="checkbox">Business Proposal
+        <input type="checkbox" name="checkbox">Personal Message<br><br>
+        <br>
+        <textarea rows="10" cols="40"placeholder="Please not thgat any thing you type will only be vivsible to the owner of this website"></textarea><br><br>
+        <input type="submit" value="Send contact">
+        </div>
+  </body>
+</html>
