@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SAT---(Gallery)</title>
+    <style>
+        body {
+        font-family: "Agency FB", sans-serif;
+      }
+      #animationcloud {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: -5;
+      }
+      
+      /* Style the menu container */
+      .menu {
+        display: flex;
+        justify-content: center;
+        padding-left: 146px;
+        
+      }
+      
+      /* Style the menu items */
+      .menu-item {
+        margin: 0 5px;
+        color: #000000;
+        text-decoration: none;
+        margin-right: 150px; 
+        font-size: 20px;
+        margin-top: 50px;
+      }
+      
+      /* Style the hovered menu items */
+      .menu-item:hover {
+        color: red;
+      }
+  
+      body {
+        font-family: "Agency FB", sans-serif;
+        background-repeat: no-repeat;
+        overflow: hidden;
+      }
+      
+      /* Style the logo */
+      .logo img {
+        width: 250px;
+        height: 70px;
+      }
+      .logo {
+        position: absolute;
+        
+        margin-top: 40px;
+        margin-left: 120px;
+      }
+        .animation{
+            margin-top: 100px;
+            display: flex;
+            height: 20rem;
+            gap: 1rem;
+        }
+        .animation > div{
+            flex: 1;
+            border-radius: 1rem;
+            background-position: center;
+            /* filter: blur(3px); */
+            filter: drop-shadow(30px 30px 50px #4b4b4b) blur(3px);;
+            background-repeat: no-repeat;
+            transition: all .8s cubic-bezier(.25,.4,.45,1.4);
+         
+        }
+            
+  
+        .animation > div:hover {
+            flex: 5;
+            filter: none;
+
+        }
+        .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform-origin: bottom right;
+        transform: rotate(360deg);
+        font-size: 20px;
+        color: #010101;
+        margin-right: 20px;
+        margin-bottom:10px;
+        color: black;
+        }
+        .img1{
+          margin-top: 50px;
+          height: 475px;
+          width: 750px;
+        }
+        .img2{
+          margin-top: 30px;
+          height: 525px;
+            width: 750px;
+        }
+        .img3{
+          height: 600px;
+            width: 750px;
+        }
+        .img4{
+          margin-top: 30px;
+          height: 525px;
+            width: 750px;
+        }
+        .img5{
+          margin-top: 50px;
+          height: 475px;
+          width: 750px;
+        }
+
+
+    </style>
+    
+  </head>
+  <body>
+    <div class="logo">
+        <a class="signature" href=index.html ><img src="images/signature.png" alt="Logo"></a>
+      </div>
+      
+      
+      <nav class="menu">
+        <a class="menu-item active" href="index.html">HOME</a>
+        <a class="menu-item" href="aboutme.html">ABOUT</a>
+        <a class="menu-item" href="slider.html"><font color="red">GALLERY</font></a>
+        <a class="menu-item" href="testimonials.html">EXPERIENCES</a>
+        <a class="menu-item" href="contact.html">CONTACT</a>
+      </nav>
+    <div class="animation">
+        <div class="img1" style="background-image: url(images/1.jpg);"></div>
+        <div class="img2"style="background-image: url(images/2.jpg);"></div>
+        <div class="img3"style="background-image: url(images/3.jpg);"></div>
+        <div class="img4"style="background-image: url(images/4.jpg);"></div>
+        <div class="img5"style="background-image: url(images/5.jpg);"></div>
+       
+    </div>
+    <div id="animationcloud"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+        <script>
+          
+                VANTA.FOG({
+                el: "#animationcloud",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                 minHeight: 200.00,
+                minWidth: 200.00,
+                highlightColor: 0xffffff,
+                midtoneColor: 0xffe5f2,
+                lowlightColor: 0xffffff,
+                baseColor: 0x7c7c7c,
+                blurFactor: 0.59,
+                speed: 1.70,
+                zoom: 1.40
+            })
+                              
+        </script>
+        <div class="footer" >
+            @2023. My Website. All rights reserved.
+        </div>
+  </body>
+</html>

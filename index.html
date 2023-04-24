@@ -1,37 +1,43 @@
-<!DOCTYPE html>
 <html>
-  <head>
+    <head>
+      <title>SAT---(Index)</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-      /* Set the font family to Agency FB for the entire page */
-      body {
+    body {
         font-family: "Agency FB", sans-serif;
+        overflow: hidden;
+        max-width: 1200px;
       }
-      
-      /* Style the menu container */
+        #animationcloud {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: -5;
+      }
       .menu {
         display: flex;
         justify-content: center;
-        padding-left: 146px;
-        margin-top: 50px;
+        padding-left: 700px;
+        
       }
       
       /* Style the menu items */
       .menu-item {
-        
-       
         margin: 0 5px;
         color: #000000;
         text-decoration: none;
-        margin-right: 150px;
-        
+        margin-right: 150px; 
         font-size: 20px;
+        margin-top: 50px;
       }
       
       /* Style the hovered menu items */
       .menu-item:hover {
         color: red;
       }
-
       .footer {
         position: absolute;
         bottom: 0;
@@ -39,56 +45,38 @@
         transform-origin: bottom right;
         transform: rotate(270deg);
         font-size: 20px;
-        color: #555;
         margin-right: 20px;
         margin-bottom:300px;
       }
-      body {
-        font-family: "Agency FB", sans-serif;
-        background-image: url('images/hululu1.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        overflow: hidden;
-      }
-       /* Style the logo */
-       .logo {
-        position: absolute;
-        top: 0;
-        left: 0;
-        margin-top: 20px;
-        margin-left: 120px;
-      }
-      
-      /* Style the logo image */
       .logo img {
-        width: 100px;
-        height: auto;
+        width: 250px;
+        height: 70px;
+      }
+      .logo {
+        position: absolute;
+        
+        margin-top: 40px;
+        margin-left: 120px;
       }
       .container {
         position:absolute;
-        top: 362px; ;
+        top: 350px; ;
         left: 303px;
         height: 100vh; /* set the container height to the viewport height */
+        
       }
 
       .hello-text {
-        font-family: "Agency FB", sans-serif;
+        font-family: "Agency FB", sans-serif;;
         font-size: 24px;
         letter-spacing: 2px;
-      }
-
-      .intro-text {
-        font-family: Times New Roman, serif;
-        font-size: 18px;
-        line-height: 1.5;
-        margin-top: 10px;
-        font
+        
       }
       .sanskar-text {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
         font-size: 50px;
         letter-spacing: 2px;
-        font-weight: 900;
+        font-weight: 18;
       }
       .download-button {
         display: flex;
@@ -98,8 +86,8 @@
       }
 
       .download-link {
-        display: inline-block;
-        padding: 10px 20px;
+        
+        padding: 15px 25px;
         background-color: red;
         color: white;
         text-decoration: none;
@@ -107,46 +95,143 @@
         font-weight: bold;
         border-radius: 5px;
         transition: background-color 0.3s ease;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.8);
       }
 
       .download-link:hover {
         background-color: darkred;
       }
-      
+      .socials img{
+        z-index: 10;
+        
+      }
+      .bgphoto img{
+        z-index: 10;
+        margin-left: 500px;
+        padding-left: 100px;
+        margin-top: 10px;
+        height: 100%;
+        width: 110%;
+      }
+      body {
+  margin:0;
+  padding:0;
+  background: #dedede;
+}
+
+ul {
+  position:absolute;
+  margin-top: 50px;
+  margin-left: 110px;
+  transform: translate(-50%, -50%);
+  display:flex;
+}
+
+ul li {
+  list-style: none;
+}
+
+ul li a {
+  position: relative;
+  width:50px;
+  height:50px;
+  display:block;
+  text-align:center;
+  margin:0 10px;
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: border-box;
+  text-decoration:none;
+  box-shadow: 0 10px 15px rgba(0,0,0,0.8);
+  background: linear-gradient(0deg, #ddd, #fff);
+  transition: .5s;
+}
+ul li a img{
+  margin-top: 10px;
+}
+
+ul li a:hover {
+  box-shadow: 0 2px 5px rgb(249, 0, 0);
+  text-decoration:none;
+  
+}
+
+ul li a .fab {
+  width: 100%;
+  height:100%;
+  display:block;
+  background: linear-gradient(0deg, #f8c3c3, #ddd);
+  border-radius: 50%;
+  line-height: calc(60px - 12px);
+  font-size:24px;
+  color: #262626;
+  transition: .5s;
+}
+    
+     
 
     </style>
-  </head>
-  
-  <body >
-      <div class="menu-wrapper"></div> 
-        <div class="logo">
-        <a class="signature" href="index.html" ><img src="images/signature.png" alt="Logo"></a>
-      </div>
-      <nav class="menu">
-      <a class="menu-item active" href="index.html"><font color="red">HOME</font></a>
-      <a class="menu-item" href="aboutme.html">ABOUT</a>
-      <a class="menu-item" href="#">HOOBIES</a>
-      <a class="menu-item" href="#">EDUCATION</a>
-      <a class="menu-item" href="contact.html">CONTACT</a>
-      </nav>
 
-      <div class="footer">
-        @2023. My Website. All rights reserved.
-      </div>
-      <div class="container">
-        <div class="hello-text">-------HELLO</div>
-          <div class="sanskar-text">
-            I'am <font color='red'>Sanskar</font> Tiwari <br>
+    </head>
+    <body>
+        <div class="logo">
+            <a class="signature" href="index.html" ><img src="images/signature.png" alt="Logo"></a>
           </div>
-          <div class="hello-text">
-            This is Sanskar Ananta Tiwari. A student in the British College<br>
-            located in Thapathali and this is his project.<br>
-            <div class="download-button">
-            <a href="#" class="download-link">DOWNLOAD CV</a>
+        <nav class="menu">
+            <a class="menu-item active" href="index.html"><font color="red">HOME</font></a>
+            <a class="menu-item" href="aboutme.html">ABOUT</a>
+            <a class="menu-item" href="slider.html">GALLERY</a>
+            <a class="menu-item" href="testimonials.html">EXPERIENCES</a>
+            <a class="menu-item" href="contact.html">CONTACT</a>
+            </nav>
+
+            <div class="bgphoto">
+                <img src="images/flotingSAT.png">
             </div>
+        <div id="animationcloud"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+        <script>
+          
+                VANTA.FOG({
+                el: "#animationcloud",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                 minHeight: 200.00,
+                minWidth: 200.00,
+                highlightColor: 0xffffff,
+                midtoneColor: 0xffe5f2,
+                lowlightColor: 0xffffff,
+                baseColor: 0x7c7c7c,
+                blurFactor: 0.59,
+                speed: 1.70,
+                zoom: 1.40
+            })
+                              
+        </script>
+        <div class="footer">
+            <font color="black">@2023. My Website. All rights reserved.</font>
           </div>
-      </div>
-   
-      
+          <div class="container">
+            <div class="hello-text">-------HELLO</div>
+              <div class="sanskar-text">
+                I am <font color='red'>Sanskar</font> Tiwari <br>
+              </div>
+              <div class="hello-text">
+                This is Sanskar Ananta Tiwari. A student in the British College<br>
+                located in Thapathali and this is his Website.<br>
+                <div class="download-button">
+                <a href="#" class="download-link"> DOWNLOAD CV</a>
+                </div>
+                <ul>
+                  <li><a href="https://www.instagram.com/_sanskar.10/"><i class="fab fa-insta" aria-hidden="true"><img src="icons/insta.png"></i></a></li>
+                  <li><a href="https://www.facebook.com/unique.sanskar"><i class="fab fa-facebookr" aria-hidden="true"><img src="icons/facebook.png"></i></a></li>
+                  <li><a href="https://www.linkedin.com/in/sanskar-tiwari-630590250/"><i class="fab fa-linkedin" aria-hidden="true"><img src="icons/linkedin.png"></i></a></li>
+                  <li><a href="#"><i class="fab fa-github" aria-hidden="true"><img src="icons/github.png"></i></a></li>
+                </ul>
+              </div>
+          </div>
+          
   </body>
 </html>

@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta chatset="uft-8">
+    <title>SAT---(About ME)</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <style>
       /* Set the font family to Agency FB for the entire page */
       body {
         font-family: "Agency FB", sans-serif;
+        max-width: 1200px;
+      }
+      #animationcloud {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: -5;
       }
       
       /* Style the menu container */
       .menu {
         display: flex;
         justify-content: center;
-        padding-left: 146px;
-        margin-top: 50px;
+        padding-left: 700px;
+       
       }
       
       /* Style the menu items */
@@ -22,6 +34,7 @@
         text-decoration: none;
         margin-right: 150px;
         font-size: 20px;
+        margin-top: 50px;
       }
       
       /* Style the hovered menu items */
@@ -36,14 +49,12 @@
         transform-origin: bottom right;
         transform: rotate(270deg);
         font-size: 20px;
-        color: #555;
+        color: #010101;
         margin-right: 20px;
         margin-bottom:300px;
       }
       body {
         font-family: "Agency FB", sans-serif;
-        background-image: url('images/hululu2.jpg');
-        background-size: cover;
         background-repeat: no-repeat;
         overflow: hidden;
       }
@@ -51,16 +62,15 @@
       /* Style the logo */
       .logo {
         position: absolute;
-        top: 0;
-        left: 0;
-        margin-top: 20px;
+        
+        margin-top: 40px;
         margin-left: 120px;
       }
       
       /* Style the logo image */
       .logo img {
-        width: 100px;
-        height: auto;
+        width: 250px;
+        height: 70px;
       }
       
       /* Style the containers for the rectangles */
@@ -84,13 +94,16 @@
         box-shadow: 0 0 20px 10px rgba(0,0,0,0.3);
        
       }
+
       
       /* Style the text inside the rectangles */
       .rectangle p {
+        padding-left: 10px;
+        padding-right: 10px;
         font-size: 22px;
         line-height: 1.5;
-        text-align: center;
-        justify-content: center;
+   
+        
         
       }
       .rectangle img{
@@ -107,22 +120,78 @@
         margin-left: 200px;
         font-size: 22px;
       }
+      .bgphoto{
 
-    </style>
+        z-index: 10;
+        margin-top: 15px;
+        height: 10%;
+        width: 10%;
+        margin-left: 400px;
+
+      }
+      @media screen and (max-width: 800px) {
+        .menu{
+          padding-left: 160px;
+        }
+.menu-item {
+  margin: 0 2px;
+  margin-right: 50px;
+  font-size: 14px;
+  }
+
+   .logo img{
+    width: 40px;
+    height: 40px;
+    
+  }
+  .logo{
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+}
+      
+</style>
   </head>
   
-  <body >
+  <body>
+    
     <div class="logo">
       <a class="signature" href=index.html ><img src="images/signature.png" alt="Logo"></a>
     </div>
     
+    
     <nav class="menu">
       <a class="menu-item active" href="index.html">HOME</a>
       <a class="menu-item" href="aboutme.html"><font color="red">ABOUT</font></a>
-      <a class="menu-item" href="#">HOOBIES</a>
-      <a class="menu-item" href="#">EDUCATION</a>
+      <a class="menu-item" href="slider.html">GALLERY</a>
+      <a class="menu-item" href="testimonials.html">EXPERIENCES</a>
       <a class="menu-item" href="contact.html">CONTACT</a>
     </nav>
+    <div class="bgphoto">
+      <img src="images/aboutmepic.jpg.png">
+  </div>
+    <div id="animationcloud"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+        <script>
+          
+                VANTA.FOG({
+                el: "#animationcloud",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                 minHeight: 200.00,
+                minWidth: 200.00,
+                highlightColor: 0xffffff,
+                midtoneColor: 0xffe5f2,
+                lowlightColor: 0xffffff,
+                baseColor: 0x7c7c7c,
+                blurFactor: 0.59,
+                speed: 1.70,
+                zoom: 1.40
+            })
+                              
+        </script>
     <div class="footer">
         @2023. My Website. All rights reserved.
     </div>
@@ -130,29 +199,30 @@
     <div class="container">
       <div class="rectangle">
         <h1 align="center"><font color="red">ABOUT ME</font></h1>
-        <p>Sanskar Ananta Tiwari is a dedicated student currently pursuing a Bachelor of Science (BSc) Honours in Computing at The British College. With a passion for technology, Sanskar has always been fascinated by the world of computing and is eager to pursue a career in the field. Alongside his studies, he is always eager to learn and expand his skill set through extracurricular activities and personal projects. Sanskar is a hardworking and driven individual who is committed to achieving his goals and making a positive impact on the world around him.</p>
+        <p>Sanskar Ananta Tiwari is a  student currently pursuing a Bachelor of Science (BSc) Honours in Computing at The British College. With a passion for technology, Sanskar has always been fascinated by the world of computing and is eager to pursue a career in the field. Alongside his studies, he is always eager to learn and expand his skill set through extracurricular activities and personal projects. Sanskar is a hardworking and driven individual who is committed to achieving his goals and making a positive impact on the world around him.</p>
       </div>
       <div class="skills">
         <h1><font color ="red">SKILLS</font></h1>
            <table>
             <tr>
-                <td>Critical thinking and problem solving</td> <td><img src ="images/4star.png"></td>
+                <td>Critical thinking and problem solving</td><td><img src ="images/3star.png"></td>
             </tr>
             <tr>
-                <td>Teamwork and collaboration</td> <td><img src ="images/5star.png"></td>
+                <td>Teamwork and collaboration</td><td><img src ="images/5star.png"> </td>
             </tr>
             <tr>
                 <td>Professionalism and strong work ethic</td> <td><img src ="images/4star.png"></td>
             </tr>
             <tr>
-                <td>Oral and written communications skills</td> <td><img src ="images/3star.png"></td>
+                <td>Oral and written communications skills</td><td><img src ="images/3star.png"></td>
             </tr>
             <tr>
-                <td>Leadership</td> <td><img src ="images/4star.png"></td>
+                <td>Leadership</td><td><img src ="images/4star.png"></td>
             </tr>
            
         </div>
       
     </div>
+   
   </body>
 </html>

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SAT---(Experiences)</title>
+	<style>
+        body {
+        font-family: "Agency FB", sans-serif;
+        overflow: hidden;
+        max-width: 1200px;
+      }
+        #animationcloud {
+        top: 0;
+        left: 0;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: -5;
+      }
+      .menu {
+        display: flex;
+        justify-content: center;
+        padding-left: 700px;
+        
+      }
+      
+      /* Style the menu items */
+      .menu-item {
+        margin: 0 5px;
+        color: #000000;
+        text-decoration: none;
+        margin-right: 150px; 
+        font-size: 20px;
+        margin-top: 50px;
+      }
+      
+      /* Style the hovered menu items */
+      .menu-item:hover {
+        color: red;
+      }
+      .footer {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        transform-origin: bottom right;
+        transform: rotate(270deg);
+        font-size: 20px;
+        margin-right: 20px;
+        margin-bottom:300px;
+      }
+      .logo img {
+        width: 250px;
+        height: 70px;
+      }
+      .logo {
+        position: absolute;
+        
+        margin-top: 40px;
+        margin-left: 120px;
+      }
+
+    
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body {
+			font-family: "Agency FB", sans-serif;
+			
+		}
+
+		.container {
+            
+			display: flex;
+			flex-wrap: wrap;
+            margin-top: 90px;
+            margin-left: 950px;
+            height: 700px;
+            width: 600px;
+            
+
+		}
+
+		.testimonials-container {
+			margin: 10px;
+			overflow: hidden;
+		}
+
+		.testimonials-container h2 {
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+            height: 60px;
+			padding: 20px;
+			background-color: #d0d0d0;
+		}
+
+		.testimonial {
+			display: flex;
+			flex-direction: column;
+			padding: 20px;
+			border-bottom: 1px solid #e0e0e0;
+		}
+
+		.testimonial:last-of-type {
+			border-bottom: none;
+		}
+
+		.testimonial img {
+			max-width: 100%;
+			margin-bottom: 20px;
+		}
+
+		.testimonial h3 {
+			font-size: 18px;
+			font-weight: bold;
+			margin-bottom: 10px;
+		}
+
+		.testimonial p {
+			font-size: 16px;
+			line-height: 1.5;
+			margin-bottom: 20px;
+		}
+        .rectanglehult {
+    position: absolute;
+    top: 75%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    width: 738px;
+    height: 400px;
+    background-color: #e8e8e4;
+    
+}
+    .rectanglehult img{
+       
+        width:175px;
+        height:300px;
+        margin-left: 40px;
+        margin-top: 15px;
+
+    }
+    .rectanglehult h2{
+        margin-top: 15px;
+    }
+        .project1 {
+    position: absolute;
+    top: 34%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    width: 345px;
+    height: 250px;
+    background-color: #e8e8e4;
+    
+   
+    
+}
+    .project2 {
+    position: absolute;
+    top: 34%;
+    left: 42%;
+    transform: translate(-50%, -50%);
+    width: 345px;
+    height:250px;
+    background-color: #e8e8e4;
+    
+            
+}
+    .project2 img {
+        margin-top: 20px;
+        margin-left: 30px;
+        height: 150px;
+        width: 270px;
+        justify-content: center;
+        filter: blur(2px);
+
+    }
+    .project2 img:hover {
+            filter: none;
+
+        }
+    .project1 h2{
+        margin-top: 10px;
+    }
+    .project2 h2{
+        margin-top: 10px;
+    }
+    .project1 img:hover {
+            filter: none;
+
+        }
+    .project1 img {
+        margin-top: 20px;
+        margin-left: 30px;
+        height: 150px;
+        width: 270px;
+        justify-content: center;
+        filter: blur(2px);
+    }
+    .testimonial1 {
+        height: 220px;
+        width:600px ;
+        margin-top: 30px;
+        background-color:#e8e8e4; ;
+
+    }
+    .testimonial2 {
+        height: 160px;
+        width:600px ;
+        margin-top: 30px;
+        background-color:#e8e8e4; ;
+
+    }
+    
+    .testimonial3 {
+        height: 140px;
+        width:600px ;
+        margin-top: 30px;
+        background-color:#e8e8e4; ;
+
+    }
+    
+    
+    .testimonialtext {
+        padding-left: 20px;
+        padding-right: 50px;
+        padding-top: 20px;
+        font-size: 16px;
+        margin-bottom: 100px;
+       
+    }
+    .testimonialtext img{
+        padding-top: 10px;
+        
+        height: 70px;
+        width: 50px;
+         border-radius:50% ;
+    }
+    .testimonialtext h3{
+     
+     padding-left: 25px;
+    }
+    .testimonialtext sat{
+     
+     padding-left: 25px;
+    }
+    .rectanglehult p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    
+
+	</style>
+</head>
+<body>
+    <div class="logo">
+        <a class="signature" href="index.html" ><img src="images/signature.png" alt="Logo"></a>
+      </div>
+    <nav class="menu">
+        <a class="menu-item active" href="index.html">HOME</a>
+        <a class="menu-item" href="aboutme.html">ABOUT</a>
+        <a class="menu-item" href="slider.html">GALLERY</a>
+        <a class="menu-item" href="testimonials.html"><font color="red">EXPERIENCES</font></a>
+        <a class="menu-item" href="contact.html">CONTACT</a>
+        </nav>
+
+        
+    <div id="animationcloud"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script>
+      
+            VANTA.FOG({
+            el: "#animationcloud",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+             minHeight: 200.00,
+            minWidth: 200.00,
+            highlightColor: 0xffffff,
+            midtoneColor: 0xffe5f2,
+            lowlightColor: 0xffffff,
+            baseColor: 0x7c7c7c,
+            blurFactor: 0.59,
+            speed: 1.70,
+            zoom: 1.40
+        })
+                          
+    </script>
+    
+	<div class="container">
+		<div class="testimonials-container">
+			<h2>Testimonials</h2>
+			<div class="testimonial1">
+                
+				<div class="testimonialtext">
+				    <p>
+                        I highly recommend Sanskar Ananta Tiwari for any project or team that requires a strong problem solver and team player. Sanskar possesses exceptional analytical and problem-solving skills that enable him to tackle even the most complex challenges with ease. Moreover, his proficiency in HTML, CSS, and JavaScript is truly remarkable, which makes him an invaluable asset for any web development project. Overall, Sanskar is a highly skilled and dedicated professional who can be trusted to deliver outstanding results every time.
+                    </p>
+                    <table>
+                        <tr>
+                        <td><img src="images/ABdon.png" alt="Testimonial 1"></td><td><h3>Abhidan Jung Thapa</h3><sat>FPGA Design Engineer, Logictronix Technologies</sat></td>
+                        </tr>
+                    </table>
+                   
+                 
+                </div> 
+                   
+			</div>
+            <div class="testimonial2">
+			<div class="testimonialtext">
+                <p>
+                    Sanskar is a hardworking young man who has a keen interest in learning and exploring new things. Having worked with him in Hult Prize made PR process much easier. He is full of ideas and is passionate in what he does.
+                </p>
+                <table>
+                    <tr>
+                    <td><img src="images/CD.jpg" alt="Testimonial 1"></td><td><h3>Prajolita Bista</h3><sat>Campus Director,Hult prize at The British College</sat></td>
+                    </tr>
+                </table>
+               
+             
+            </div> 
+            
+		</div>
+        <div class="testimonial3">
+			<div class="testimonialtext">
+                <p>
+                    Sanskar is a hardworking, intelligent, and tactful individual who is highly interactive, always open to learning, and eager to share his ideas
+                </p>
+                <table>
+                    <tr>
+                    <td><img src="images/facilitator.png" alt="Testimonial 1"></td><td><h3>Prakash Khanal</h3><sat>Facilitator,Hult prize at The British College</sat></td>
+                    </tr>
+                </table>
+               
+             
+            </div> 
+            
+		</div>
+	</div>
+    <div class="project1"><h2 align="center"><font color="black">Web Clone of an Organization</font></h2><a href="Web clone of an org/index.html"><img src="images/kmc.PNG"></a></div>
+    <div class="project2"><h2 align="center"><font color="black">Personal Portfolio</font></h2><a href="index.html" ><img src="images/home page.jpg"></a></div>
+    <div class="rectanglehult">
+        <h2 align="center">Hult Prize at The British College</h2>
+        <table>
+            <tr>
+                <td><img src="images/ID Card.jpg"></td><td><p>The Hult Prize is a start-up accelerator for social entrepreneurship which brings together the brightest college and university 
+                    students from around the globe to solve the world’s most pressing issues with innovative ideas for sustainable start-up enterprises. Hult Prize TBC facilitates a platform for
+                     aspirants of The British College to come forward with their very own startups addressing much needed global scenarios.</p><br>
+                     <p>As a training coordinator for the Hult Prize event, I had the opportunity to develop and deliver training sessions for student teams to enhance their skills in
+                      various areas such as ideation, pitching, and business planning. I also had the chance to collaborate with other event organizers, mentors, and industry experts to
+                       create a supportive and collaborative environment for the participating teams. Additionally, I learned about the challenges faced by social entrepreneurs and gain valuable
+                        insights into the world of start-up accelerators and social entrepreneurship.</p></td>
+            </tr>
+        </table>
+        
+    </div>
+    <div class="footer">
+        <font color="black">@2023. My Website. All rights reserved.</font>
+      </div>
+
+</body>
+</html>
